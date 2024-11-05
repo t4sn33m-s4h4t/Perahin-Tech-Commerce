@@ -20,7 +20,7 @@ const PageTitleSetter = () => {
           document.title = `Contact || ${title}`
           break;
         default:
-          document.title = `404 || ${title}`
+          document.title = `${title}`
       }
     }, [location.pathname]);
   

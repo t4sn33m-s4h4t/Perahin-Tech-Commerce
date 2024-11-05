@@ -10,7 +10,7 @@ export default function Footer() {
         <footer className="text-base-content p-10 px-28 bg-white text-center pb-20 mt-28">
             <div >
                 <p className="text-gray-500">
-                    <NavLink className=" btn btn-ghost text-3xl font-bold text-black mt-12 mb-6" to="/">Gadget Heaven</NavLink>
+                    <NavLink className=" btn btn-ghost text-3xl font-bold text-black mt-12 mb-12 md:mb-6" to="/">Gadget Heaven</NavLink>
                     <br />
                     Leading the way in cutting-edge technology and innovation.
                 </p>
@@ -21,7 +21,7 @@ export default function Footer() {
                 {
                     allMenus.map((menuList, i) => {
                         return (
-                            <nav key={i} className="place-items-center">
+                            <nav key={i} className="place-items-center text-md">
                                 <h6 className="footer-title opacity-100">{menuList[0]}</h6>
                                 <Menus menus={menuList[1]} />
                             </nav>

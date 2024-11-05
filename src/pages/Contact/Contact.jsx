@@ -1,89 +1,55 @@
 export default function Contact() {
     return (
-        <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
-            <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div className="mt-8 overflow-hidden">
-                    <div className="grid grid-cols-1 md:grid-cols-2">
-                        <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg">
-                            <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
-                                Get in touch: 
-                            </h1>
-                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
-                                Fill in the form to start a conversation
-                            </p>
+        <div>
+            <section className="bg-white mx-32 rounded-2xl -mt-48">
+  <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+    
+    <form action="#" className="space-y-8">
+      <div>
+        <label htmlFor="email" className="block mb-2 text-md font-medium text-purple-900 ">
+          Your Email
+        </label>
+        <input
+          type="email"
+          id="email"
+          className=" outline-none shadow-sm bg-purple-50 border border-purple-300 text-purple-900 text-md rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+          placeholder="name@flowbite.com"
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="subject" className="block mb-2 text-md font-medium text-purple-900 ">
+          Subject
+        </label>
+        <input
+          type="text"
+          id="subject"
+          className=" outline-none block p-3 w-full text-md text-purple-900 bg-purple-50 rounded-lg border border-purple-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
+          placeholder="Let us know how we can help you"
+          required
+        />
+      </div>
+      <div className="sm:col-span-2">
+        <label htmlFor="message" className="block mb-2 text-md font-medium text-purple-900 ">
+          Your message
+        </label>
+        <textarea
+          id="message"
+          rows="6"
+          className="block p-2.5 w-full text-md text-purple-900 bg-purple-50 rounded-lg shadow-sm border border-purple-300 focus:ring-primary-500 focus:border-primary-500"
+          placeholder="Leave a comment..."
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        className="py-3 px-5 text-md font-medium text-center text-white bg-purple-500 rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 "
+      >
+        Send message
+      </button>
+    </form>
+  </div>
+</section>
 
-                            <div className="flex items-center mt-8 text-gray-600">
-                              
-                                <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    Acme Inc, Street, State, Postal Code
-                                </div>
-                            </div>
-
-                            <div className="flex items-center mt-4 text-gray-600">
-                                
-                                <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    +44 1234567890
-                                </div>
-                            </div>
-
-                            <div className="flex items-center mt-2 text-gray-600">
-                           
-                                <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    info@acme.org
-                                </div>
-                            </div>
-                        </div>
-
-                        <form className="p-6 flex flex-col justify-center">
-                            <div className="flex flex-col">
-                                <label htmlFor="name" className="hidden">
-                                    Full Name
-                                </label>
-                                <input
-                                    type="name"
-                                    name="name"
-                                    id="name"
-                                    placeholder="Full Name"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <div className="flex flex-col mt-2">
-                                <label htmlFor="email" className="hidden">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Email"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <div className="flex flex-col mt-2">
-                                <label htmlFor="tel" className="hidden">
-                                    Number
-                                </label>
-                                <input
-                                    type="tel"
-                                    name="tel"
-                                    id="tel"
-                                    placeholder="Telephone Number"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
-                            >
-                                Submit
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }
