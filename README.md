@@ -3,10 +3,10 @@
 Welcome to the Perahin-E-Commerce project, an interactive and responsive e-commerce web application built with React. This README provides an overview of the project, its features, and the technologies used.
 
 ## Live Website
-[https://perahin-ecommerce.surge.sh/](#)  
+[Live Site Link](https://perahin-ecommerce.surge.sh/)  
 
 ## Requirement Document
-[https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-t4sn33m-s4h4t/blob/main/Requirement.pdf](#)  
+[Requirements Document](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-t4sn33m-s4h4t/blob/main/Requirement.pdf)  
 
 
 ## React Fundamentals Used
