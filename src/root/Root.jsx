@@ -10,7 +10,6 @@ export default function Root() {
   const { id } = useParams();
   const [heading, setHeading] = useState('');
 
-  // Define mappings for paths (without trailing slashes or params)
   const pageHeadings = {
     '/': 'Home',
     '/category': 'Home',
@@ -25,7 +24,7 @@ export default function Root() {
     const matchedPath = Object.keys(pageHeadings).find(basePath =>
       normalizedPath === basePath || (basePath !== '/' && normalizedPath.startsWith(basePath))
     );
-    
+
     setHeading(pageHeadings[matchedPath] || 'Gadget Heaven');
   }, [location.pathname, id]);
 

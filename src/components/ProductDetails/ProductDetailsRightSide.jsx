@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
-import { FaRegHeart, FaHeart } from 'react-icons/fa'; 
+import { FaRegHeart, FaHeart } from 'react-icons/fa';
 import { CartContext, WishlistContext } from '../../App';
+import { toast } from 'react-toastify';
 
 export default function ProductDetailsRightSide({ product }) {
     const { product_title, price, availability, description, specification, rating } = product || {};
@@ -11,12 +12,20 @@ export default function ProductDetailsRightSide({ product }) {
     const addToCart = () => {
         if (!cart.some(item => item.product_id === product.product_id)) {
             setCart([...cart, product]);
+            toast.success("Product Added to Cart!")
+        } else {
+            toast.info("Product is Already in Cart")
+
         }
     };
 
     const addToWishlist = () => {
         if (!wishlist.some(item => item.product_id === product.product_id)) {
             setWishlist([...wishlist, product]);
+            toast.success("Product Added to Wishlist!")
+        } else {
+
+            toast.info("Product is Already in Wishlist")
         }
     };
 

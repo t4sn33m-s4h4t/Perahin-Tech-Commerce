@@ -4,7 +4,7 @@ import Cards from "../../components/Home/Cards"
 import { Outlet, useLoaderData, useParams } from 'react-router-dom'
 
 export default function Home() {
-  const {catId} = useParams();
+  const { catId } = useParams();
   const products = useLoaderData();
   const categories = [...new Set(products.map(product => product.category))];
 

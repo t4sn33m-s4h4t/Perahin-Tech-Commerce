@@ -1,6 +1,4 @@
 import React from 'react'
-import { AiOutlineShoppingCart } from 'react-icons/ai';
-import { FaRegHeart } from 'react-icons/fa';
 import { useLoaderData, useParams } from 'react-router-dom';
 import ProductDetailsLeftSide from '../../components/ProductDetails/ProductDetailsLeftSide'
 import ProductDetailsRightSide from '../../components/ProductDetails/ProductDetailsRightSide'
@@ -16,11 +14,11 @@ export default function ProductDetails() {
     return (
         <div>
             <div className="flex -mt-48 max-w-5xl mx-auto bg-white rounded-3xl overflow-hidden border border-gray-200">
-                <ProductDetailsLeftSide 
-                product_image={product_image} 
-                product_title={product_title} />
+                <ProductDetailsLeftSide
+                    product_image={product_image}
+                    product_title={product_title} />
 
-                <ProductDetailsRightSide product={product}/>
+                <ProductDetailsRightSide product={product} />
             </div>
         </div>
     )

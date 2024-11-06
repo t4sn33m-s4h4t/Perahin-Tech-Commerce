@@ -17,7 +17,7 @@ export default function Navbar({ transBg }) {
   function showCart() {
     setIsCart(true)
     navigate("/dashboard")
-  }function showWishlist() {
+  } function showWishlist() {
     setIsCart(false)
     navigate("/dashboard")
   }
@@ -55,15 +55,15 @@ export default function Navbar({ transBg }) {
         </div>
         <div className="navbar-end md:space-x-4 space-x-2">
           <button
-          onClick={showCart}
-          className={`relative p-2 md:p-3 border-2 bg-white border-base-300 rounded-full text-lg ${transBg ? "text-black" : ""}`}>
+            onClick={showCart}
+            className={`relative p-2 md:p-3 border-2 bg-white border-base-300 rounded-full text-lg ${transBg ? "text-black" : ""}`}>
             <AiOutlineShoppingCart />
             {
               cart.length ?
                 <div
                   className="bg-purple-500 badge badge-outline absolute  border-purple-500 -top-1 -right-1 h-[18px] w-[18px] p-0 text-xs ">
                   <p className='font-semibold text-white'>
-                  {cart.length}
+                    {cart.length}
                   </p>
                 </div>
                 : null
@@ -72,8 +72,8 @@ export default function Navbar({ transBg }) {
 
           </button>
           <button
-          onClick={showWishlist}
-          className={`relative p-2 md:p-3 border-2 bg-white border-base-300 rounded-full text-lg ${transBg ? "text-black" : ""}`}>
+            onClick={showWishlist}
+            className={`relative p-2 md:p-3 border-2 bg-white border-base-300 rounded-full text-lg ${transBg ? "text-black" : ""}`}>
             <FaRegHeart />
           </button>
         </div>

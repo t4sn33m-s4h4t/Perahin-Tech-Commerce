@@ -17,19 +17,19 @@ const Router = createBrowserRouter([
     children: [
       {
         path: '/',
-        loader: ()=> fetch("/products.json"),
+        loader: () => fetch("/products.json"),
         element: <Home />,
-        children:[
+        children: [
           {
             path: "/category/:catId",
-            loader: ()=> fetch("/products.json"),
+            loader: () => fetch("/products.json"),
             element: <Cards></Cards>,
           }
         ]
       },
       {
         path: "statistics",
-        loader: ()=> fetch("/products.json"),
+        loader: () => fetch("/products.json"),
         element: <Statistics />,
       },
       {
@@ -42,11 +42,11 @@ const Router = createBrowserRouter([
       },
       {
         path: "product/:id",
-        loader: ()=> fetch("/products.json"),
+        loader: () => fetch("/products.json"),
         element: <ProductDetails />,
       },
     ],
   },
 ]);
 
-  export default Router;
+export default Router;

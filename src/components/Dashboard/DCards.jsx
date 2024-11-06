@@ -7,12 +7,12 @@ export default function DCards({ goods }) {
   const [stuffs, setStuffs] = useState([...goods]);
 
   useEffect(() => {
-      if (sorted) {
-          setStuffs([...goods].sort((a, b) => b.price - a.price));
-      } else {
-          setStuffs([...goods]);
-      }
-  }, [sorted, goods]); 
+    if (sorted) {
+      setStuffs([...goods].sort((a, b) => b.price - a.price));
+    } else {
+      setStuffs([...goods]);
+    }
+  }, [sorted, goods]);
 
   return (
     <div>

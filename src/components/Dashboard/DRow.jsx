@@ -18,7 +18,7 @@ export default function DRow({ sorted, setSorted }) {
         totalPrice += price;
     }
     const makePurchase = () => {
-       document.getElementById('my_modal_5').showModal()
+        document.getElementById('my_modal_5').showModal()
     }
     return (
         <div className='my-10'>
@@ -39,7 +39,7 @@ export default function DRow({ sorted, setSorted }) {
                     >
                         Purchase
                     </button>
-                    
+
                     <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                         <div className="modal-box text-center space-y-1">
                             <img src={grp} className='mx-auto mb-4' />
@@ -47,7 +47,7 @@ export default function DRow({ sorted, setSorted }) {
                             <br />
                             <hr />
                             <p className="py-4 text-gray-500">Thanks for purchasing. <br /><br />
-                            Total: {totalPrice.toFixed(2)}</p>
+                                Total: {totalPrice.toFixed(2)}</p>
                             <div className="modal-action">
                                 <form method="dialog" className='w-full'>
                                     <button onClick={naviGateToHome} className="btn w-full">Close</button>

@@ -5,7 +5,7 @@ import { IsCardContext } from '../../App';
 
 
 export default function Banner({ title }) {
-  
+
   const { isCart, setIsCart } = useContext(IsCardContext);
   const navigate = useNavigate();
   function handleCartActive(e) {
@@ -50,7 +50,7 @@ export default function Banner({ title }) {
                 title === "Home" ? (
                   button('Shop Now', isCart)
                 ) : title === "Product Details" || title === "Contact Us" ? (
-                  null 
+                  null
                 ) : (
                   <>
                     {button('Cart', isCart)}

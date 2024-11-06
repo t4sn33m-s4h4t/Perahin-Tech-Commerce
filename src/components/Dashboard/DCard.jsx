@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { MdCancel } from 'react-icons/md';
 import { CartContext, IsCardContext, WishlistContext } from '../../App';
+import { toast } from 'react-toastify';
 
 export default function DCard({ product }) {
     const addToCart = () => {
@@ -15,9 +16,12 @@ export default function DCard({ product }) {
         if (isCart) {
             const deletedGoods = cart.filter(_ => _.product_id != product.product_id)
             setCart([...deletedGoods])
+            toast.success("Product Deleted From Cart!")
+
         } else {
             const deletedGoods = wishlist.filter(_ => _.product_id != product.product_id)
             setWishlist([...deletedGoods])
+            toast.success("Product Deleted From Wishlist!")
         }
     }
     return (

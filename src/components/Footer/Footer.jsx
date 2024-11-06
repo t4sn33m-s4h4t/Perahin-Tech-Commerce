@@ -17,18 +17,18 @@ export default function Footer() {
             </div>
             <hr className="border-y border-gray-200 my-8" />
             <div className="max-w-3xl mx-auto">
-            <div className="footer items-start place-items-center ">
-                {
-                    allMenus.map((menuList, i) => {
-                        return (
-                            <nav key={i} className="place-items-center text-md">
-                                <h6 className="footer-title opacity-100">{menuList[0]}</h6>
-                                <Menus menus={menuList[1]} />
-                            </nav>
-                        )
-                    })
-                }
-            </div>
+                <div className="footer items-start place-items-center ">
+                    {
+                        allMenus.map((menuList, i) => {
+                            return (
+                                <nav key={i} className="place-items-center text-md">
+                                    <h6 className="footer-title opacity-100">{menuList[0]}</h6>
+                                    <Menus menus={menuList[1]} />
+                                </nav>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </footer>
     );
