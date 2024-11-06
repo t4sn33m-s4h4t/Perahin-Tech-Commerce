@@ -34,4 +34,4 @@ The project leverages several core React concepts and techniques, including:
 ## Project Setup
 1. Clone the repository:  
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-t4sn33m-s4h4t.git
