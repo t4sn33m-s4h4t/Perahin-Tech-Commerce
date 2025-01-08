@@ -1,4 +1,4 @@
-# Perahin-E-Commerce
+# Perahin-Tech-Commerce
 
 Welcome to the Perahin-E-Commerce project, an interactive and responsive e-commerce web application built with React. This README provides an overview of the project, its features, and the technologies used.
 
